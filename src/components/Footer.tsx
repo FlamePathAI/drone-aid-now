@@ -18,7 +18,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-sm">SA</span>
               </div>
-              <span className="font-semibold text-lg">SkyAware</span>
+              <span className="font-semibold text-lg">FlamePath</span>
             </div>
             <p className="text-secondary-foreground/70 mb-6 max-w-sm">
               Delivering real-time situational awareness through edge AI drone 
