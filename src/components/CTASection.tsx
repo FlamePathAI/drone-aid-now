@@ -11,7 +11,7 @@ const CTASection = () => {
           </h2>
           <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
             Join emergency management agencies and first responders who trust 
-            FlamePAth to deliver critical intelligence when lives are on the line.
+            FlamePath to deliver critical intelligence when lives are on the line.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
