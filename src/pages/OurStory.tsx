@@ -47,7 +47,7 @@ const OurStory = () => {
 
               
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2"> </h2>
-              <p className="text-primary font-medium text-sm uppercase tracking-wider mb-6">The Long Watch</p>
+              <p className="text-primary font-medium text-sm uppercase tracking-wider mb-6">THE LONG WATCH</p>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
                   Santiago grew up in Colombia watching forest fires tear through the landscape 
