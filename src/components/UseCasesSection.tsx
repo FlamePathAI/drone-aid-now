@@ -1,28 +1,28 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import floodResponse from "@/assets/flood-response.jpg";
 import thermalWildfire from "@/assets/thermal-wildfire.jpg";
+import floodResponse from "@/assets/flood-response.jpg";
 import earthquakeResponse from "@/assets/earthquake-response.jpg";
 
 const useCases = [
   {
     image: thermalWildfire,
-    title: "Wildfire Detection & Monitoring",
-    description: "Thermal imaging drones detect hotspots before they become infernos. Real-time fire perimeter mapping guides firefighter deployment and evacuation routes.",
-    stats: ["Early detection", "Perimeter tracking", "Crew safety"],
+    title: "Wildfire Detection & Response",
+    description: "Thermal imaging drones map fire perimeters in real time and output predictive escape vectors — all offline, during the flight, not after landing. Designed for the 10-minute critical window that current tools fail.",
+    stats: ["Perimeter tracking", "Escape routing", "Crew safety"],
   },
   {
     image: floodResponse,
-    title: "Flood Response & Rescue",
-    description: "Deploy fleets within minutes to locate stranded survivors, assess infrastructure damage, and coordinate rescue operations across vast flooded areas.",
-    stats: ["Survivor detection", "Route planning", "Damage assessment"],
+    title: "Pipeline & Industrial Monitoring",
+    description: "840,000 km of Canadian pipeline runs through remote terrain with no connectivity. FlamePath's edge vector output flags thermal anomalies instantly — no cloud, no delay, no sovereignty risk.",
+    stats: ["Leak detection", "Remote operations", "Data sovereignty"],
   },
   {
     image: earthquakeResponse,
-    title: "Earthquake Search & Rescue",
-    description: "Navigate collapsed structures and debris fields to detect signs of life. Create 3D damage maps to prioritize rescue efforts and identify hazards.",
-    stats: ["Life detection", "3D mapping", "Hazard identification"],
+    title: "Precision Agriculture",
+    description: "62 million hectares of Canadian farmland sits in cellular dead zones. FlamePath delivers crop stress maps, irrigation targeting, and frost damage vectors — actionable data, in the field, instantly.",
+    stats: ["Crop monitoring", "Dead-zone operations", "Offline analytics"],
   },
 ];
 
@@ -34,11 +34,11 @@ const UseCasesSection = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-primary font-medium text-sm uppercase tracking-wider">Use Cases</span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-3 mb-4">
-            Mission-Critical Applications
+            One Platform. Every Remote Crisis.
           </h2>
           <p className="text-muted-foreground text-lg">
-            From wildfires to earthquakes, our platform adapts to the unique 
-            challenges of each disaster scenario.
+            The offline intelligence problem isn't unique to wildfire — it's endemic 
+            to any critical operation beyond cell coverage.
           </p>
         </div>
 

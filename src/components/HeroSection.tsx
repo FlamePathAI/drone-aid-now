@@ -19,19 +19,20 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
             <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-            <span className="text-primary-foreground text-sm font-medium">Real-time disaster intelligence</span>
+            <span className="text-primary-foreground text-sm font-medium">Edge AI for Canadian First Responders</span>
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary-foreground leading-tight mb-6">
-            Edge AI Drones for
-            <span className="block text-primary">Situational Awareness</span>
+            Instant clarity when
+            <span className="block text-primary">every second counts.</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-secondary-foreground/80 mb-8 max-w-2xl">
-            Deploy autonomous drone fleets that process data at the edge, delivering 
-            real-time intelligence to first responders during natural disasters.
+            FlamePath builds offline Edge AI for drones — processing raw thermal data 
+            on-device and delivering a single tactical directive to incident commanders: 
+            where is this fire going, and how do we get people out.
           </p>
 
           {/* CTA Buttons */}
@@ -49,16 +50,16 @@ const HeroSection = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-secondary-foreground/20">
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary">50ms</div>
-              <div className="text-secondary-foreground/70 text-sm mt-1">Edge Processing</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">10KB</div>
+              <div className="text-secondary-foreground/70 text-sm mt-1">Vector Output (vs. 10GB raw video)</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary">99.7%</div>
-              <div className="text-secondary-foreground/70 text-sm mt-1">Detection Accuracy</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">45→0</div>
+              <div className="text-secondary-foreground/70 text-sm mt-1">Data Gap Eliminated</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary">24/7</div>
-              <div className="text-secondary-foreground/70 text-sm mt-1">Autonomous Ops</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">100%</div>
+              <div className="text-secondary-foreground/70 text-sm mt-1">Canadian Data Sovereignty</div>
             </div>
           </div>
         </div>

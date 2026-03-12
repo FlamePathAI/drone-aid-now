@@ -1,30 +1,30 @@
 import { Badge } from "@/components/ui/badge";
-import { Cpu, Wifi, Battery, Map } from "lucide-react";
+import { Cpu, Radio, Plane, FileOutput } from "lucide-react";
 
 const techSpecs = [
   {
     icon: Cpu,
     label: "Edge Processing",
     value: "NVIDIA Jetson",
-    description: "GPU-accelerated inference",
+    description: "GPU-accelerated on-device inference",
   },
   {
-    icon: Wifi,
-    label: "Communication",
-    value: "4G/5G + Mesh",
-    description: "Redundant connectivity",
+    icon: Radio,
+    label: "Transmission",
+    value: "Low-BW Radio",
+    description: "Vectors over mesh — no internet required",
   },
   {
-    icon: Battery,
-    label: "Flight Time",
-    value: "45+ Minutes",
-    description: "Extended operations",
+    icon: Plane,
+    label: "Hardware",
+    value: "DJI Platform",
+    description: "Integration-ready, field-tested hardware",
   },
   {
-    icon: Map,
-    label: "Coverage",
-    value: "10km Range",
-    description: "Per drone radius",
+    icon: FileOutput,
+    label: "Output Size",
+    value: "10KB",
+    description: "vs. 10GB raw thermal video",
   },
 ];
 
@@ -37,42 +37,45 @@ const TechnologySection = () => {
           <div>
             <span className="text-primary font-medium text-sm uppercase tracking-wider">Technology</span>
             <h2 className="text-3xl md:text-4xl font-bold mt-3 mb-6">
-              Purpose-Built for Disaster Response
+              Purpose-Built for Where the Cloud Fails
             </h2>
             <p className="text-secondary-foreground/80 text-lg mb-8">
-              Our proprietary edge AI stack combines custom hardware with advanced 
-              neural networks optimized for disaster scenarios. Every component is 
-              designed for reliability when conventional systems fail.
+              FlamePath's Edge AI stack runs entirely on-device — transforming raw 
+              thermal sensor data into lightweight tactical vectors without a single 
+              cloud dependency.
             </p>
 
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-3">
                 <Badge variant="outline" className="mt-1 border-primary/50 text-primary">01</Badge>
                 <div>
-                  <h4 className="font-semibold mb-1">Custom Vision Models</h4>
+                  <h4 className="font-semibold mb-1">Edge Inference Pipeline</h4>
                   <p className="text-secondary-foreground/70 text-sm">
-                    Neural networks trained on millions of disaster imagery samples for 
-                    unparalleled accuracy in smoke, debris, and survivor detection.
+                    Our proprietary model runs on NVIDIA Jetson hardware, processing raw 
+                    thermal data through a custom-trained fire detection neural network. 
+                    Output: a 10KB vector file, not a video stream.
                   </p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Badge variant="outline" className="mt-1 border-primary/50 text-primary">02</Badge>
                 <div>
-                  <h4 className="font-semibold mb-1">Distributed Intelligence</h4>
+                  <h4 className="font-semibold mb-1">RRC Partnership & Training Data</h4>
                   <p className="text-secondary-foreground/70 text-sm">
-                    Each drone shares insights with the fleet, creating a collective 
-                    intelligence that adapts to evolving situations in real-time.
+                    We are partnering with Red River College to clean and label thermal 
+                    fire datasets — building the training foundation that makes our model 
+                    more accurate with every deployment.
                   </p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Badge variant="outline" className="mt-1 border-primary/50 text-primary">03</Badge>
                 <div>
-                  <h4 className="font-semibold mb-1">Rugged Hardware</h4>
+                  <h4 className="font-semibold mb-1">Offline-First by Design</h4>
                   <p className="text-secondary-foreground/70 text-sm">
-                    IP67-rated drones withstand extreme temperatures, rain, and 
-                    smoke conditions that would ground commercial alternatives.
+                    No fallback to the cloud. No "offline mode." FlamePath was designed 
+                    from line one to operate without connectivity — because in disaster 
+                    zones, that assumption kills.
                   </p>
                 </div>
               </div>

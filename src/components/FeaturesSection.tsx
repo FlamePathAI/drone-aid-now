@@ -1,36 +1,36 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Brain, Radio, Shield, Zap, Eye, Cloud } from "lucide-react";
+import { WifiOff, FileOutput, TrendingUp, ShieldCheck, Cpu, Zap } from "lucide-react";
 
 const features = [
   {
-    icon: Brain,
-    title: "Edge AI Processing",
-    description: "On-device neural networks analyze imagery in real-time, eliminating latency and connectivity dependencies.",
+    icon: WifiOff,
+    title: "Offline-First Architecture",
+    description: "All processing happens on-device. No cell tower. No cloud round-trip. No latency. FlamePath works where connectivity fails — which is exactly where disasters happen.",
+  },
+  {
+    icon: FileOutput,
+    title: "Vector Output, Not Raw Video",
+    description: "We compress 10 gigabytes of thermal data into a 10-kilobyte vector file — fire perimeter, escape route, containment line — transmitted instantly over low-bandwidth radio.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Predictive Fire Intelligence",
+    description: "Commanders don't need to see where the fire is. They need to know where it will be in 10 minutes. FlamePath's Edge AI delivers predictive vectors, not historical pixels.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Canadian Data Sovereignty",
+    description: "All inference runs on-device. Your data never touches a foreign cloud. For Canadian federal contracts, this isn't a feature — it's a legal requirement our US competitors cannot meet.",
+  },
+  {
+    icon: Cpu,
+    title: "Hardware-Agnostic Platform",
+    description: "Built to run on NVIDIA Jetson hardware integrated with DJI drone platforms. Designed from day one to be hardware-agnostic as the platform scales.",
   },
   {
     icon: Zap,
-    title: "Instant Detection",
-    description: "Identify survivors, hazards, and structural damage within milliseconds using advanced computer vision.",
-  },
-  {
-    icon: Radio,
-    title: "Mesh Networking",
-    description: "Drones form autonomous mesh networks, ensuring continuous communication even when infrastructure fails.",
-  },
-  {
-    icon: Eye,
-    title: "Multi-Spectral Imaging",
-    description: "Thermal, infrared, and visual sensors provide comprehensive situational awareness day or night.",
-  },
-  {
-    icon: Shield,
-    title: "Autonomous Operations",
-    description: "Self-navigating drones operate safely in GPS-denied and hazardous environments.",
-  },
-  {
-    icon: Cloud,
-    title: "Command Integration",
-    description: "Seamlessly integrate with existing emergency management systems and protocols.",
+    title: "Instant Field Deployment",
+    description: "No specialist required. The FlamePath interface is designed for the incident commander in the field — one screen, one directive, under pressure.",
   },
 ];
 
@@ -45,8 +45,8 @@ const FeaturesSection = () => {
             Intelligence When It Matters Most
           </h2>
           <p className="text-muted-foreground text-lg">
-            Our edge AI platform delivers critical situational awareness capabilities 
-            designed for the chaos of natural disaster response.
+            Purpose-built for the reality of remote Canadian operations — where the 
+            cloud doesn't exist and decisions can't wait.
           </p>
         </div>
 

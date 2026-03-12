@@ -9,7 +9,7 @@ const Navbar = () => {
     { name: "Solutions", href: "#solutions" },
     { name: "Technology", href: "#technology" },
     { name: "Use Cases", href: "#use-cases" },
-    { name: "About", href: "#about" },
+    { name: "Our Story", href: "#about" },
   ];
 
   return (
@@ -40,7 +40,7 @@ const Navbar = () => {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
             <Button variant="ghost" size="sm">
-              Contact Sales
+              Contact the Team
             </Button>
             <Button size="sm">Request Demo</Button>
           </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
               ))}
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
                 <Button variant="ghost" size="sm">
-                  Contact Sales
+                  Contact the Team
                 </Button>
                 <Button size="sm">Request Demo</Button>
               </div>
