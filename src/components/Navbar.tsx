@@ -1,15 +1,17 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const navLinks = [
-    { name: "Solutions", href: "#solutions" },
-    { name: "Technology", href: "#technology" },
-    { name: "Use Cases", href: "#use-cases" },
-    { name: "Our Story", href: "#about" },
+    { name: "Solutions", href: "/#solutions", isRoute: false },
+    { name: "Technology", href: "/#technology", isRoute: false },
+    { name: "Use Cases", href: "/#use-cases", isRoute: false },
+    { name: "Our Story", href: "/our-story", isRoute: true },
   ];
 
   return (
@@ -27,13 +29,23 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
-              >
-                {link.name}
-              </a>
+              link.isRoute ? (
+                <Link
+                  key={link.name}
+                  to={link.href}
+                  className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
+                >
+                  {link.name}
+                </Link>
+              ) : (
+                <a
+                  key={link.name}
+                  href={location.pathname === "/" ? link.href.replace("/", "") : link.href}
+                  className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
+                >
+                  {link.name}
+                </a>
+              )
             ))}
           </div>
 
@@ -59,14 +71,25 @@ const Navbar = () => {
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </a>
+                link.isRoute ? (
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.name}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.name}
+                    href={location.pathname === "/" ? link.href.replace("/", "") : link.href}
+                    className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.name}
+                  </a>
+                )
               ))}
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
                 <Button variant="ghost" size="sm">
