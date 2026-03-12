@@ -44,7 +44,7 @@ const OurStory = () => {
             {/* Santiago */}
             <div>
               <div className="w-24 h-24 rounded-2xl overflow-hidden mb-6 border-2 border-primary/20">
-                <img src={santiagoHeadshot} alt="Santiago Góngora" className="w-full h-full object-cover" />
+                
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">Santiago</h2>
               <p className="text-primary font-medium text-sm uppercase tracking-wider mb-6">The Long Watch</p>
