@@ -2,27 +2,24 @@ import { Separator } from "@/components/ui/separator";
 
 const Footer = () => {
   const footerLinks = {
-    Solutions: ["Wildfire Response", "Flood Management", "Earthquake SAR", "Hurricane Tracking"],
-    Company: ["About Us", "Careers", "Press", "Contact"],
-    Resources: ["Documentation", "Case Studies", "Blog", "Support"],
-    Legal: ["Privacy Policy", "Terms of Service", "Security"],
+    Solutions: ["Wildfire Response", "Pipeline Monitoring", "Precision Agriculture", "Arctic & Federal Sovereignty"],
+    Company: ["About", "Contact", "contact@flamepath.ca"],
   };
 
   return (
     <footer id="about" className="bg-secondary text-secondary-foreground py-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">SA</span>
+                <span className="text-primary-foreground font-bold text-sm">FP</span>
               </div>
               <span className="font-semibold text-lg">FlamePath</span>
             </div>
             <p className="text-secondary-foreground/70 mb-6 max-w-sm">
-              Delivering real-time situational awareness through edge AI drone 
-              technology for natural disaster response.
+              Bringing AI offline — to where decisions cannot wait.
             </p>
             <div className="flex gap-4">
               <a href="#" className="text-secondary-foreground/60 hover:text-primary transition-colors">
@@ -41,12 +38,21 @@ const Footer = () => {
               <ul className="space-y-2">
                 {links.map((link) => (
                   <li key={link}>
-                    <a 
-                      href="#" 
-                      className="text-secondary-foreground/60 hover:text-secondary-foreground transition-colors text-sm"
-                    >
-                      {link}
-                    </a>
+                    {link.includes("@") ? (
+                      <a 
+                        href={`mailto:${link}`}
+                        className="text-secondary-foreground/60 hover:text-secondary-foreground transition-colors text-sm"
+                      >
+                        {link}
+                      </a>
+                    ) : (
+                      <a 
+                        href="#" 
+                        className="text-secondary-foreground/60 hover:text-secondary-foreground transition-colors text-sm"
+                      >
+                        {link}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -61,7 +67,7 @@ const Footer = () => {
             © 2026 FlamePath Technologies. All rights reserved.
           </p>
           <p className="text-secondary-foreground/50 text-sm">
-            Saving lives through intelligent aerial surveillance.
+            Bringing AI offline — to where decisions cannot wait.
           </p>
         </div>
       </div>
