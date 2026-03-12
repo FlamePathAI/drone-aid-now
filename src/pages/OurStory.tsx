@@ -43,10 +43,10 @@ const OurStory = () => {
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Santiago */}
             <div>
-              <div className="w-24 h-24 rounded-2xl overflow-hidden mb-6 border-2 border-primary/20">
-                
-              </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">Santiago</h2>
+              
+
+              
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2"> </h2>
               <p className="text-primary font-medium text-sm uppercase tracking-wider mb-6">The Long Watch</p>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
@@ -73,7 +73,7 @@ const OurStory = () => {
               
 
               
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">Cobie</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">Cobie Klein Damsel</h2>
               <p className="text-primary font-medium text-sm uppercase tracking-wider mb-6">The Search for Meaningful Work</p>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
@@ -160,7 +160,7 @@ const OurStory = () => {
                     <img src={santiagoHeadshot} alt="Santiago Góngora" className="w-full h-full object-cover" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-card-foreground">Santiago Góngora</h3>
+                    <h3 className="text-xl font-bold text-card-foreground">Santiago Villarreal</h3>
                     <p className="text-primary text-sm font-medium">CEO & CTO</p>
                   </div>
                 </div>
