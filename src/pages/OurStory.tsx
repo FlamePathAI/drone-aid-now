@@ -7,12 +7,12 @@ import cobieHeadshot from "@/assets/cobie-headshot.jpg";
 import Footer from "@/components/Footer";
 
 const credentials = [
-  { icon: Award, label: "Falling Walls Lab Manitoba — Audience Choice Award" },
-  { icon: GraduationCap, label: "Mitacs Research Funding — $30,000 secured" },
-  { icon: Building2, label: "North Forge Basecamp — Completed 2026" },
-  { icon: Lightbulb, label: "1517 Fund Bursary — Selected" },
-  { icon: GraduationCap, label: "University of Manitoba — Research Partnership" },
-];
+{ icon: Award, label: "Falling Walls Lab Manitoba — Audience Choice Award" },
+{ icon: GraduationCap, label: "Mitacs Research Funding — $30,000 secured" },
+{ icon: Building2, label: "North Forge Basecamp — Completed 2026" },
+{ icon: Lightbulb, label: "1517 Fund Bursary — Selected" },
+{ icon: GraduationCap, label: "University of Manitoba — Research Partnership" }];
+
 
 const OurStory = () => {
   return (
@@ -71,7 +71,7 @@ const OurStory = () => {
             {/* Cobie */}
             <div>
               <div className="w-24 h-24 rounded-2xl overflow-hidden mb-6 border-2 border-primary/20">
-                <img src={cobieHeadshot} alt="Cobie" className="w-full h-full object-cover" />
+                
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">Cobie</h2>
               <p className="text-primary font-medium text-sm uppercase tracking-wider mb-6">The Search for Meaningful Work</p>
@@ -252,12 +252,12 @@ const OurStory = () => {
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-6">
-            {credentials.map((cred, index) => (
-              <div key={index} className="flex items-center gap-2 px-4 py-2 rounded-full border border-secondary-foreground/15 bg-secondary-foreground/5">
+            {credentials.map((cred, index) =>
+            <div key={index} className="flex items-center gap-2 px-4 py-2 rounded-full border border-secondary-foreground/15 bg-secondary-foreground/5">
                 <cred.icon className="w-4 h-4 text-primary" />
                 <span className="text-secondary-foreground/80 text-sm font-medium">{cred.label}</span>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -272,12 +272,12 @@ const OurStory = () => {
             Our first live pilot flies in August 2026. If you're a fire agency, forestry 
             operation, or government partner in Western Canada — let's talk.
           </p>
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             variant="secondary"
             className="group"
-            asChild
-          >
+            asChild>
+            
             <a href="mailto:contact@flamepath.ca">
               Get in Touch
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -287,8 +287,8 @@ const OurStory = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>);
+
 };
 
 export default OurStory;
