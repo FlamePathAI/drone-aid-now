@@ -1,15 +1,17 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const navLinks = [
-    { name: "Solutions", href: "#solutions" },
-    { name: "Technology", href: "#technology" },
-    { name: "Use Cases", href: "#use-cases" },
-    { name: "Our Story", href: "#about" },
+    { name: "Solutions", href: "/#solutions", isRoute: false },
+    { name: "Technology", href: "/#technology", isRoute: false },
+    { name: "Use Cases", href: "/#use-cases", isRoute: false },
+    { name: "Our Story", href: "/our-story", isRoute: true },
   ];
 
   return (
