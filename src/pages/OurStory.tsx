@@ -70,9 +70,9 @@ const OurStory = () => {
 
             {/* Cobie */}
             <div>
-              <div className="w-24 h-24 rounded-2xl overflow-hidden mb-6 border-2 border-primary/20">
-                
-              </div>
+              
+
+              
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">Cobie</h2>
               <p className="text-primary font-medium text-sm uppercase tracking-wider mb-6">The Search for Meaningful Work</p>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
