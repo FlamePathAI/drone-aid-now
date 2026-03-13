@@ -46,7 +46,7 @@ const OurStory = () => {
               
 
               
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2"> </h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">Santiago Villarreal</h2>
               <p className="text-primary font-medium text-sm uppercase tracking-wider mb-6">THE LONG WATCH</p>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
@@ -105,8 +105,8 @@ const OurStory = () => {
             <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-snug italic">
               "When the Manitoba fires hit in 2025, we both knew — separately — that we 
               had to do something. When we found each other, the question stopped being 
-              <em className="not-italic underline decoration-primary-foreground/30 underline-offset-4">whether</em> and started being 
-              <em className="not-italic underline decoration-primary-foreground/30 underline-offset-4">how fast.</em>"
+              <em className="not-italic underline decoration-primary-foreground/30 underline-offset-4"> whether</em> and started being 
+              <em className="not-italic underline decoration-primary-foreground/30 underline-offset-4"> how fast.</em>"
             </p>
           </blockquote>
         </div>
