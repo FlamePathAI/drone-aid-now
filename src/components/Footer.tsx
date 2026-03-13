@@ -64,7 +64,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 gap-4">
           <p className="text-secondary-foreground/50 text-sm">
-            © 2026 FlamePath Technologies. All rights reserved.
+            © 2026 FlamePath Electronics Corp. All rights reserved.
           </p>
           <p className="text-secondary-foreground/50 text-sm">
             Bringing AI offline — to where decisions cannot wait.
