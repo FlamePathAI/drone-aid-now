@@ -12,6 +12,7 @@ const Navbar = () => {
     { name: "Technology", href: "/#technology", isRoute: false },
     { name: "Use Cases", href: "/#use-cases", isRoute: false },
     { name: "Our Story", href: "/our-story", isRoute: true },
+    { name: "Contact", href: "/contact", isRoute: true },
   ];
 
   return (
